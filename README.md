@@ -28,4 +28,4 @@ Panggil data langsung dari raw GitHub:
 ```r
 # R
 url <- "https://raw.githubusercontent.com/wsuryaningrat/mbg-food-poisoning-data/refs/heads/main/data/mbg-data.csv"
-df <- read.csv(url)
+df <- read.csv(url,sep = ";")
