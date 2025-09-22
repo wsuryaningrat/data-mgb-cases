@@ -29,6 +29,6 @@ df <- read.csv(url,sep = ";")
 
 ```py
 import pandas as pd
-url = 'https://raw.githubusercontent.com/pydata/pydata-book/master/ch09/stock_px.csv'
+url <- "https://raw.githubusercontent.com/wsuryaningrat/mbg-food-poisoning-data/refs/heads/main/data/mbg-data.csv"
 df = pd.read_csv(url,index_col=0,parse_dates=[0])
 ```
