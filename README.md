@@ -21,13 +21,15 @@ Dataset ini berisi kurasi data **kasus keracunan makanan program MBG (Makan Berg
 
 Panggil data langsung dari raw GitHub:
 
+### Via R
 ```r
-# R
 url <- "https://raw.githubusercontent.com/wsuryaningrat/mbg-food-poisoning-data/refs/heads/main/data/mbg-data.csv"
 df <- read.csv(url,sep = ";")
 ```
 
+### Via Python
 ```py
+# Python
 import pandas as pd
 url <- "https://raw.githubusercontent.com/wsuryaningrat/mbg-food-poisoning-data/refs/heads/main/data/mbg-data.csv"
 df = pd.read_csv(url,index_col=0,parse_dates=[0])
