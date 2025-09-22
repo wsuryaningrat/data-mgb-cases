@@ -3,10 +3,6 @@
 Dataset ini berisi kurasi data **kasus keracunan makanan program MBG (Makan Bergizi Gratis)** di Indonesia tahun 2025.
 
 ## 📊 Data
-
-- `data/kasus-mbg-22-sept.xlsx`  
-  Data asli hasil scraping dari artikel Tempo.
-
 - `data/kasus-mbg-clean.csv`  
   Data hasil kurasi dengan kolom:
   - `wilayah` → 1,2,3 sesuai laporan
@@ -29,3 +25,10 @@ Panggil data langsung dari raw GitHub:
 # R
 url <- "https://raw.githubusercontent.com/wsuryaningrat/mbg-food-poisoning-data/refs/heads/main/data/mbg-data.csv"
 df <- read.csv(url,sep = ";")
+```
+
+```py
+import pandas as pd
+url = 'https://raw.githubusercontent.com/pydata/pydata-book/master/ch09/stock_px.csv'
+df = pd.read_csv(url,index_col=0,parse_dates=[0])
+```
