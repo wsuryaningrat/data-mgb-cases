@@ -10,10 +10,9 @@ Dataset ini berisi kurasi data **kasus keracunan makanan program MBG (Makan Berg
 - `data/kasus-mbg-clean.csv`  
   Data hasil kurasi dengan kolom:
   - `wilayah` → 1,2,3 sesuai laporan
-  - `tanggal_pelaporan` → format YYYY-MM-DD
+  - `tanggal_kasus` → format YYYY-MM-DD
   - `provinsi` → sesuai standar 38 provinsi Indonesia
   - `jumlah_kasus` → jumlah orang
-  - `text_asli` → teks laporan mentah
   - `update_date` → tanggal update berita (2025-09-22)
 
 ## 📖 Sumber Data
@@ -28,5 +27,5 @@ Panggil data langsung dari raw GitHub:
 
 ```r
 # R
-url <- "https://raw.githubusercontent.com/wsuryaningrat/mbg-food-poisoning-data/main/data/kasus-mbg-clean.csv"
+url <- "https://raw.githubusercontent.com/wsuryaningrat/mbg-food-poisoning-data/refs/heads/main/data/mbg-data.csv"
 df <- read.csv(url)
